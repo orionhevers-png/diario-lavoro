@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diario di bordo</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312233B'/%3E%3Crect x='7' y='7' width='4' height='18' fill='%23E3B23C'/%3E%3Crect x='14' y='7' width='11' height='4' fill='%23EDEFEA'/%3E%3Crect x='14' y='14' width='11' height='4' fill='%23EDEFEA'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#view">Vai al contenuto</a>
+  <div class="shell">
+    <aside class="side">
+      <a class="brand" href="#/oggi">Diario<br>di bordo</a>
+      <nav aria-label="Sezioni">
+        <a href="#/oggi" data-route="oggi">Oggi</a>
+        <a href="#/diario" data-route="diario">Giornate <span class="count" id="c-diario"></span></a>
+        <a href="#/roberto" data-route="roberto">Sync con Roberto <span class="count" id="c-roberto"></span></a>
+        <a href="#/todo" data-route="todo">To-do personale <span class="count" id="c-todo"></span></a>
+      </nav>
+      <p class="side-note">Le giornate vivono nel repository. Spunte e voci aggiunte da qui restano solo in questo browser.</p>
+    </aside>
+    <main id="view" tabindex="-1"></main>
+  </div>
+
+  <script src="data/diario.js"></script>
+  <script src="data/roberto.js"></script>
+  <script src="data/todo.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
